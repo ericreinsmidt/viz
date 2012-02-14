@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="content-type" content="text/html;charset=UTF-8" />
+	<title>Test Viz for Cloud</title>
+	<link href="css/basic.css" type="text/css" rel="stylesheet" />
+	<link href="css/visualize.css" type="text/css" rel="stylesheet" />
+	<link href="css/visualize-dark.css" type="text/css" rel="stylesheet" />
+	<script type="text/javascript" src="js/excanvas.js"></script>
+	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.4.4/jquery.min.js"></script>
+	<script type="text/javascript" src="js/visualize.jQuery.js"></script>
+	<script type="text/javascript" src="js/request_data.js"></script>   
+    
+</head>
+<body>
+<div id="buttons" style="width: 343px; margin: 0 auto; margin-top: 20px;">
+	<a class="myButton" onclick="makeRequest('one.txt');">Set One</a>
+	<a class="myButton" onclick="makeRequest('two.txt');">Set Two</a>
+	<a class="myButton" onclick="makeRequest('three.txt');">Set Three</a>
+</div>
+<div id="data_div" style="min-height: 462px; height: 462px; width: 502px; margin: 0 auto;"></div>
+<div id="buttons2" style="width: 320px; margin: 0 auto; margin-top: 60px;"></div>
+</body>
+</html>
