@@ -1,6 +1,0 @@
-People and Hobbies
-Arts/Crafts,Boating,Chess,Dancing,Entertaining
-Alice,9,5,7,2,12
-Bob,8,6,4,11,3
-Charlie,7,8,4,2,15
-Denise,4,8,1,13,2

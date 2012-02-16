@@ -1,39 +1,18 @@
-var xhr = false;
-function makeRequest(url) {
-	if (window.XMLHttpRequest)
-	{
-		xhr = new XMLHttpRequest();
-	}
-	else {
-		if (window.ActiveXObject)
-		{
-			try { xhr = new ActiveXObject("Microsoft.XMLHTTP"); }
-			catch (e) { }
-		}
-	}
-	if (xhr) {
-		xhr.onreadystatechange = showContents;
-		xhr.open("GET", url, true);
-		xhr.send(null);
-	} else {
-		document.write("ERROR - could not create XMLHttpRequest");
-	}
+function makeRequest(filename) {
+	var result = null;
+	var scriptUrl = "info.php?filename=" + filename;
+	$.ajax({
+		url: scriptUrl,
+		type: 'get',
+		dataType: 'text',
+		async: false,
+		success: function(data) {
+			result = data;
+		} 
+	});
+	dispCSV(result);
 }
- 
-function showContents() 
-{
-	var doc = '';
-	if (xhr.readyState == 4) 
-	{
-		if (xhr.status == 200 || xhr.status == 0) 
-		{
-			doc = xhr.responseText;
-			dispCSV(doc);
-		} else {
-			document.write("ERROR - " + xhr.status);
-	 	}
-	}
-}
+
 function dispCSV(csvdoc) {
 	lines = csvdoc.split("\n");
 	var html_string = "<table style=\"display:none;\">"+
