@@ -40,5 +40,4 @@ function dispCSV(csvdoc) {
 	html_string += "</tbody></table>";
 	$('#data_div').html(html_string);
 	$('table').visualize({type: 'bar', width: '420px'});
-	$('#buttons2').html("<a class=\"myButton\" onclick=\"$('.visualize').remove(); $('table').visualize({type: 'pie', height: '300px', width: '420px'});\">Pie</a> <a class=\"myButton\" onclick=\"$('.visualize').remove(); $('table').visualize({type: 'bar', width: '420px'});\">Bar</a> <a class=\"myButton\" onclick=\"$('.visualize').remove(); $('table').visualize({type: 'area', width: '420px'});\">Area</a> <a class=\"myButton\" onclick=\"$('.visualize').remove(); $('table').visualize({type: 'line', width: '420px'});\">Line</a>");
 }
