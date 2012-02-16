@@ -1,6 +1,0 @@
-Foods and Nutritional Info
-Apple,Banana,Cookie,Date,Egg
-Calories,15,18,12,22,9
-Carbs,99,45,35,120,55
-Fat,20,18,14,6,9
-Sodium,100,55,50,75,40

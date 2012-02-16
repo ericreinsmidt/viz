@@ -1,6 +1,0 @@
-Cars and Cost
-Audi,Buick,Chrysler,Daimler-Benz,Eagle
-MPG,15,18,12,22,9
-Brakes,99,45,35,120,55
-Tune-up,250,150,125,175,110
-Oil Change,100,55,50,75,40
